@@ -82,12 +82,17 @@
     <ClCompile Include="BlockUnity.cpp" />
     <ClCompile Include="LightSource.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Ray.cpp" />
+    <ClCompile Include="approximation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="approximation.h" />
     <ClInclude Include="Block.h" />
     <ClInclude Include="BlockUnity.h" />
     <ClInclude Include="LightSource.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="VecProducts.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

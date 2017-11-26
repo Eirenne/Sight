@@ -4,10 +4,6 @@ void OnButtonClick() {
 	std::cout << "WORLD" << std::endl;
 }
 
-
-
-
-
 App::App() : window(sf::VideoMode(WIDTH, HEIGHT), "Sight", sf::Style::Close)
 {
 	window.setFramerateLimit(60);
@@ -21,10 +17,6 @@ App::App() : window(sf::VideoMode(WIDTH, HEIGHT), "Sight", sf::Style::Close)
 	leftButtonPressed = false;
 	initialize_gui();	
 }
-
-
-
-
 
 App::~App()
 {
@@ -40,7 +32,6 @@ void App::run()
 		render();
 	}
 }
-
 
 void App::processEvents()
 {
@@ -83,10 +74,10 @@ void App::processEvents()
 			{
 				if (dragged != NULL) {
 
-					int w = dragged->getGlobalBounds().width;
-					int h = dragged->getGlobalBounds().height;
-					int newX = std::min(static_cast<int>(window.getSize().x - w / 2), std::max(0 + w / 2, event.mouseMove.x)) - w / 2;
-					int newY = std::min(static_cast<int>(window.getSize().y - h / 2), std::max(0 + h / 2, event.mouseMove.y)) - h / 2;
+					float w = dragged->getGlobalBounds().width;
+					float h = dragged->getGlobalBounds().height;
+					float newX = std::min((window.getSize().x - w / 2), std::max(w / 2, (float)event.mouseMove.x)) - w / 2;
+					float newY = std::min((window.getSize().y - h / 2), std::max(h / 2, (float)event.mouseMove.y)) - h / 2;
 					std::cout << newX << " " << newY << std::endl;
 					dragged->setPosition(newX, newY);
 				}
@@ -99,9 +90,11 @@ void App::processEvents()
 	}
 }
 
+
 void App::update()
 {
 }
+
 
 void App::render()
 {
@@ -114,8 +107,6 @@ void App::render()
 	gui.Display(window);
 	window.display();
 }
-
-
 
 
 void App::initialize_gui() {

@@ -30,6 +30,12 @@
     <ClCompile Include="BlockUnity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="approximation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LightSource.h">
@@ -42,6 +48,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BlockUnity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="approximation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VecProducts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
