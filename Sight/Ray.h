@@ -10,7 +10,6 @@ public:
 	~Ray();
 	bool intersects(sf::Vector2f start, sf::Vector2f end, sf::Vector2f &intersection);
 
-private:
 	sf::Vector2f position;
 	sf::Vector2f direction;
 
